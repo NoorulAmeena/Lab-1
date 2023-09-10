@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register Employee Form</title>
+</head>
+<body>
+  <h1>Register Employee Form</h1>
+  
+  
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+    <br>
+    
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+    <br>
+    
+    <label for="age">Age:</label><br/>
+    <input type="number" name="age" id="age" size="6" min="18" max="120"
+step="1" value="27" /><br/> 
+
+    <label for="rating">Years of Experience:</label><br/>
+    <input type="range" name="rating" id="rating" min="0" max="100"
+step="1" value="0" /><br/>
+
+    <label for="phone">Phone:</label><br/>
+    <input type="text" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX" required />*<br/>
+
+    
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    
+    <label for="birthdate">Birthdate:</label>
+    <input type="date" id="birthdate" name="birthdate" required>
+    <br>
+    
+    <label for="salary">Salary:</label>
+    <input type="number" id="salary" name="salary" min="0" required>
+    <br>
+    
+    <label for="department">Department:</label>
+    <select id="department" name="department" required>
+      <option value="hr">HR</option>
+      <option value="finance">Finance</option>
+      <option value="it">IT</option>
+      <option value="sales">Sales</option>
+    </select>
+    <br>
+    
+    <a href="thankYou.html"><input type="submit" value="Register" /> 
+      <p>Fields marked * are required.</p> </a>
+  <form action="thankYou.html"> 
+  </form>
+  
+ 
+
+
+<style type="text/css">
+:required, :invalid { background-color: pink; }
+:valid { background-color: white; }
+</style>
+ 
+    
+
+
+
+    
+  </form>
+</body>
+</html>
